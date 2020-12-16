@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DasboardActivity">
+
+    <Button
+        android:id="@+id/b_grafico"
+        android:layout_width="241dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="26dp"
+        android:text="Grafico"
+        app:layout_constraintBottom_toTopOf="@+id/b_compra_venda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_cotacao" />
+
+    <Button
+        android:id="@+id/b_compra_venda"
+        android:layout_width="242dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:text="Compra e Venda"
+        app:layout_constraintBottom_toTopOf="@+id/b_historico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_grafico" />
+
+    <Button
+        android:id="@+id/b_historico"
+        android:layout_width="242dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="17dp"
+        android:text="Historico de transação "
+        app:layout_constraintBottom_toTopOf="@+id/b_deposito"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_compra_venda" />
+
+    <Button
+        android:id="@+id/b_cotacao"
+        android:layout_width="246dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:text="Cotação"
+        app:layout_constraintBottom_toTopOf="@+id/b_grafico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saldo_bitcoin_text" />
+
+    <Button
+        android:id="@+id/b_deposito"
+        android:layout_width="238dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="27dp"
+        android:text="Depositar na conta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_historico" />
+
+    <TextView
+        android:id="@+id/saldo_real_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="17dp"
+        android:text="Saldo Real:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/saldo_bitcoin_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_dashboard" />
+
+    <TextView
+        android:id="@+id/saldo_bitcoin_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="6dp"
+        android:text="Saldo Bitcoin:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/b_cotacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saldo_real_text" />
+
+    <TextView
+        android:id="@+id/nome_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="43dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/saldo_real_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

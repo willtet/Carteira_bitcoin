@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pass_field"
+        app:layout_constraintEnd_toEndOf="@+id/pass_field"
+        app:layout_constraintTop_toBottomOf="@+id/maintexto" />
+
+    <EditText
+        android:id="@+id/pass_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/b_entrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_field" />
+
+    <Button
+        android:id="@+id/b_entrar"
+        android:layout_width="206dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="17dp"
+        android:text="Entrar"
+        app:layout_constraintBottom_toTopOf="@+id/cadastre_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass_field" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="214dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="56dp"
+        android:text="Esqueceu a senha?"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastre_text" />
+
+    <TextView
+        android:id="@+id/maintexto"
+        android:layout_width="220dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginBottom="189dp"
+        android:text="ConnectionBR"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/user_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cadastre_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="Cadastre-se"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_entrar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
